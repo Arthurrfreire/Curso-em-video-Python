@@ -2,7 +2,5 @@
 
 dias = float(input('Quantos dias alugados? '))
 km = float(input('Quantos KM rodados? '))
-carro = dias * 60
-rota = km * 0.15
-pagar = carro + rota
-print('O total a pagar é de R$ {:.2f} '.format(pagar))
+pago = (dias * 60) + (km * 0.15)
+print('O total a pagar é de R$ {:.2f} '.format(pago))
