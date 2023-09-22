@@ -1,6 +1,6 @@
 #Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.
 
-import pygame
+'''import pygame
 
 def reproduzir_mp3(caminho_do_arquivo):
                    pygame.init()
@@ -10,4 +10,11 @@ def reproduzir_mp3(caminho_do_arquivo):
                    pygame.mixer.music.wait()
                    pygame.quit()
 caminho_do_arquivo = 'C:\\Users\\arthu\\OneDrive\\Documentos\\Planet Hemp - Dig Dig Dig (Ao Vivo).mp3'
-reproduzir_mp3(caminho_do_arquivo)
+reproduzir_mp3(caminho_do_arquivo)'''
+
+import pygame
+pygame.init()
+pygame.mixer.music.load(digdigdig.mp3)
+pygame.mixer.music.play()
+input()
+pygame.event.wait()
