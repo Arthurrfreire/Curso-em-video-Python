@@ -3,5 +3,5 @@
 import math
 oposto = float(input('Digite o Seno: '))
 adjacente = float(input('Digite o Cosseno: '))
-hipo = math.sqrt(oposto**2 + adjacente**2)
+hipo = math.hypot(oposto, adjacente )
 print('O comprimento da hipotenusa é: {:.2f}'.format(hipo))
