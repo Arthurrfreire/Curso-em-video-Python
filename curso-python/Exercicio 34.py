@@ -3,7 +3,7 @@ Para salários superiores a R$1.250,00, calcule um aumento de 10%.
 Para os inferiores ou iguais, o aumento é de 15%'''
 
 salario = float(input('Digite o valor do seu salário: R$ '))
-if salario > 1250.00:
+if salario >= 1250.00:
     aumento = salario + 0.10 * salario
     print('Seu salário com aumento de 15% é de R$ {:.2f}'.format(aumento))
 else:
