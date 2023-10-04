@@ -1,0 +1,1 @@
+'''Crie um programa que faça i computador jogar JOKEMPÔ com você'''
