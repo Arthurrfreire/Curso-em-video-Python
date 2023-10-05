@@ -9,6 +9,7 @@ meses = anos * 12
 prestação = casa / meses
 if prestação <= 0.3 * salario:
     print('O valor da prestação mensal é de {:.2f}'.format(prestação))
-else:
+    print('Emprestimo CONCEDIDO')
+elif prestação > 0.3 * salario:
     print('Para pagar uma casa de R${:.2f} em {} anos a prestação será de R${:.2f}'.format(casa, anos , prestação))
-print('Empréstimo NEGADO')
+    print('Empréstimo NEGADO')
