@@ -7,9 +7,9 @@
 - Acima de 40: Obesidade mórbida
 '''
 
-peso = float(input('Digite seu peso: '))
-altura = float(input('Digite sua altura: '))
-imc = peso / altura**2
+peso = float(input('Digite seu peso: (kg) '))
+altura = float(input('Digite sua altura: (m) '))
+imc = peso / (altura**2)
 if imc <= 18.5:
     print('Se você pesa {:.2f}kg e sua altura é de {:.2f}m, seu IMC é {:.1f} kg/m², portanto você estar abaixo do peso!'.format(peso, altura, imc))
 elif 18.5 <= imc <= 25:
