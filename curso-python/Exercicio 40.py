@@ -8,8 +8,8 @@ nota1 = float(input('Digite a primeira nota: '))
 nota2 = float(input('Digite a segunda nota: '))
 media = (nota1 + nota2) / 2
 if media < 5.0:
-    print('Sua média é {:.2f}, portanto você foi REPROVADO'.format(media))
+    print('Sua média é {:.1f}, portanto você foi REPROVADO'.format(media))
 elif 5.0 <= media <= 6.9:
-    print('Sua média é {:.2f}, portanto você vai para a RECUPERAÇÃO'.format(media))
+    print('Sua média é {:.1f}, portanto você vai para a RECUPERAÇÃO'.format(media))
 else:
-    print('Sua média é {:.2f}, portanto você foi APROVADO'.format(media))
+    print('Sua média é {:.1f}, portanto você foi APROVADO'.format(media))
