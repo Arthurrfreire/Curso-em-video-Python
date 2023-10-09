@@ -22,8 +22,11 @@ elif pagamento == 2:
      print('O valor a pagar é R${:.2f} com 5% de desconto'.format(desconto))
 elif pagamento == 3:
      parcelado = produto / 2
-     print('O valor a pagar é R${:.2f} em duas parcelas de {:.2f}'.format(produto, parcelado))
+     print('O valor a pagar é R${:.2f} em duas parcelas de R${:.2f} sem juros'.format(produto, parcelado))
 elif pagamento == 4:
      juros = produto * 0.2
      aumento = produto + juros
+     totparc = int(input('Quantas parcelas? '))
+     parcela = aumento / totparc
+     print('Sua compra será parcelada em {}x'.format(totparc))
      print('O valor a pagar é R${:.2f} com 20% de juros'.format(aumento))
