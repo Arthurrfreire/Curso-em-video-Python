@@ -2,6 +2,4 @@
 
 numero = int(input('Digite um número inteiro: '))
 for c in range(1, 11):
-    resultado = numero * c
-    print('{} x {} = {}'.format(numero, c, resultado))
-    
+    print('{} x {:2} = {}'.format(numero, c, numero*c))

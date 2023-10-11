@@ -6,8 +6,8 @@ atual = date.today().year
 menores = 0
 maiores = 0
 
-for c in range(7):
-    ano = int(input('Digite o ano do seu nascimento: '))
+for c in range(1, 8):
+    ano = int(input('Em que ano a {}ª pessoa nasceu? '.format(c)))
     idade = atual - ano
     
     if idade < 21:

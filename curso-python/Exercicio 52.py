@@ -1,19 +1,16 @@
 '''Faça um programa que leia um número inteiro e diga se ele é ou não um número primo
 '''
-numero = int(input('Digite um número inteiro: '))
-
-if numero <= 1:
-    primo = False
-elif numero == 2:
-    primo = True
+num = int(input('Digite um número: '))
+tot = 0
+for c in range(1, num + 1):
+    if num % c == 0:
+        print('\033[33m', end='')
+        tot += 1
+    else:
+        print('\033[31m', end='')
+    print('{} '.format(c), end='')
+print('\n\033[mO número {} foi divisível {} vezes'.format(num, tot))
+if tot == 2:
+    print('E por isso ele é PRIMO!')
 else:
-    primo = True
-    for i in range(3, int(numero**0.5) + 1, 2):
-        if numero % i == 0:
-            primo = False
-            break
-
-if primo:
-    print('ESSE NÚMERO É PRIMO')
-else:
-    print('ESSE NÚMERO NÃO É PRIMO')
+    print('E por isso ele NÃO é PRIMO')
