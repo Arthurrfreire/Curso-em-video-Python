@@ -1,0 +1,1 @@
+'''Refaça o desafio 051, lendo o primeiro termo e razão de uma PA, mostrando os 10 primeiro termos da progressão usando a estrutura while'''
